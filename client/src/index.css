@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Larger font for better visibility */
+}
+
+/* Main Container */
+.container {
+  flex: 1; /* Allow the container to grow and fill remaining space */
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto; /* Centered with margin */
+  padding: 20px;
+  background-color: white; /* White background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Centered Headings for Login and Register */
+h1 {
+  text-align: center; /* Centered heading */
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto; /* Centered with margins */
+  transition: transform 0.3s;
+}
+
+form:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Lift effect */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Smaller Logout Button Styles */
+button.logout-btn {
+  width: auto; /* Auto width for smaller button */
+  padding: 8px 12px; /* Smaller padding */
+  background-color: #dc3545;
+  margin-bottom: 20px;
+}
+
+button.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Question and Answer Styles */
+.question {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Left-aligned questions */
+}
+
+.question p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #007BFF;
+  border-radius: 5px;
+}
+
+li strong {
+  color: #333;
+}
+
+/* Links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Centered Admin Dashboard Content */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center contents */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .question {
+    padding: 10px;
+  }
+
+  ul li {
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
