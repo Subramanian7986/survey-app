@@ -41,7 +41,7 @@ A dynamic survey application that presents users with 5 random questions from a 
 
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-repo-url.git  
+   git clone https://github.com/Subramanian7986/survey-app.git  
    ```  
 
 2. Navigate to the project directory:  
